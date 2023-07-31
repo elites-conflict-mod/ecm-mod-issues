@@ -1,0 +1,31 @@
+name: Balance Issue
+description: File a balance issue report
+title: "[BALANCING]: "
+labels: ["balancing"]
+assignees:
+  - cnkommander
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the balance issue you encountered.
+      options:
+      - label: I have searched the existing issues
+        required: true
+  - type: textarea
+    id: balance-problem
+    attributes:
+      label: What is the Balance Issue?
+      placeholder: Ex. unit is too strong/weak, base structures could be more useful, etc.
+    validations:
+      required: true
+   - type: textarea
+    id: balance-solution
+    attributes:
+      label: What is the potential solution?
+      placeholder: Ex. make unit stronger/weaker with X change, improve usefulness of base wtructures with Y change, etc.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "Thanks for completing this form!"
