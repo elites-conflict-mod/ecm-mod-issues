@@ -1,0 +1,46 @@
+name: Bug Report
+description: File a bug report
+title: "[BUG]: "
+labels: ["bug"]
+assignees:
+  - cnkommander
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+      - label: I have searched the existing issues
+        required: true
+  - type: dropdown
+    id: game-platform
+    attributes:
+      label: Game Platform
+      description: What game platform do you have EAW/FOC on?
+      multiple: false
+      options:
+        - Steam
+        - Non-Steam (ex. Disc, Origin/EA App, GOG)
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what went wrong!
+    validations:
+      required: true 
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details (Optional)
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. Can be email or something else like a Discord username
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! We hope you are enjoying the mod!
+  
