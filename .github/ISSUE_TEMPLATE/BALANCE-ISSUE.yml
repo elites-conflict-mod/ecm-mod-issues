@@ -19,7 +19,7 @@ body:
       placeholder: Ex. unit is too strong/weak, base structures could be more useful, etc.
     validations:
       required: true
-   - type: textarea
+  - type: textarea
     id: balance-solution
     attributes:
       label: What is the potential solution?
